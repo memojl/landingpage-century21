@@ -11,8 +11,8 @@ $page_name='Century21';
         $tel = trim($_POST["tel"]);
         $msj = trim($_POST["msj"]);
         #Reemplazar este correo por el correo electrónico del destinatario
-        $para = "multiportal@outlook.com";
-        $BCC1 = "memojl08@gmail.com";
+        $para = "glozanos@century21ekodesar.com";
+        $BCC1 = "sonia_mh7@hotmail.com,karen.navarro@keyagenciadigital.com,multiportal@outlook.com";
 
         if (empty($nombre) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($tel) OR empty($subject) OR empty($msj)) {
             # Establecer un código de respuesta y salida.
@@ -113,7 +113,7 @@ $page_name='Century21';
 
         # Encabezados de correo electrónico.
       $headers = "From: $nombre <$email>". "\r\n";
-      $headers .= "Bcc: {$BCC1}\r\n";
+      if($BCC1!=''){$headers .= "Bcc: {$BCC1}\r\n";}
   		$headers .= 'MIME-Version: 1.0' . "\r\n";
     	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";					 
 

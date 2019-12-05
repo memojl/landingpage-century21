@@ -175,6 +175,12 @@ input,#msj{
    color:#000 !important;
   background-color: #BF9969;
 }
+.btnvermas{
+	font-size: 24px !important;
+	padding: 4px 35px !important;
+	color: #000 !important;
+    border-radius: 8px !important;
+}
 .li-cate{
 	padding:5px 0px !important;
 }
@@ -182,6 +188,13 @@ input,#msj{
 .list-default li, .list-default li a{
 	font-size:16px;
 	font-family:gothammedium !important;
+}
+.footer-top p a{
+	font-size:18px;
+	font-family:gothammedium !important;
+}
+.list-default li a:hover,.footer-top p a:hover{
+	color: #BFAB81;
 }
 @media (max-width: 400px) {
 	.box-form{
