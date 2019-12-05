@@ -112,8 +112,8 @@ $page_name='Century21';
     </body></html>';
 
         # Encabezados de correo electrónico.
-      $headers = "From: $nombre <$email>". "\r\n";
-      if($BCC1!=''){$headers .= "Bcc: {$BCC1}\r\n";}
+        $headers = "From: $nombre <$email>". "\r\n";
+        if($BCC1!=''){$headers .= "Bcc: {$BCC1}\r\n";}
   		$headers .= 'MIME-Version: 1.0' . "\r\n";
     	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";					 
 
