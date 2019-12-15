@@ -5,7 +5,7 @@ $page_name='Century21';
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         # Envío de datos        
-		    $subject = 'Contacto Web '.$page_name;//$subject = trim($_POST["subject"]);
+		$subject = 'Contacto Web '.$page_name;//$subject = trim($_POST["subject"]);
         $nombre = str_replace(array("\r","\n"),array(" "," ") , strip_tags(trim($_POST["nombre"])));
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $tel = trim($_POST["tel"]);
@@ -22,7 +22,7 @@ $page_name='Century21';
         }
 
         # Contenido del correo
-		$message='
+	$message='
     <html>
     <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
